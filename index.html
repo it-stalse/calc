@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="output" disabled />
+      <br />
+      <div id="calculator button">
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button
+          style="background-color: rgb(254, 226, 174)"
+          onclick="setOperation('+')"
+        >
+          +
+        </button>
+
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button
+          style="background-color: rgb(254, 226, 174)"
+          onclick="setOperation('-')"
+        >
+          -
+        </button>
+
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button
+          style="background-color: rgb(254, 226, 174)"
+          onclick="setOperation('*')"
+        >
+          *
+        </button>
+
+        <button
+          style="background-color: rgb(243, 175, 175)"
+          onclick="clearInput()"
+        >
+          C
+        </button>
+        <button onclick="appendNumber(0)">0</button>
+        <button
+          style="background-color: rgb(157, 150, 195)"
+          onclick="calculateResult()"
+        >
+          =
+        </button>
+        <button
+          style="background-color: rgb(254, 226, 174)"
+          onclick="setOperation('/')"
+        >
+          /
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
